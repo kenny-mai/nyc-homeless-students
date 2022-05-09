@@ -5,10 +5,9 @@ library(foreach)
 library(lubridate)
 
 # setwd to doe folder
-# Kenny: 
-setwd("~/RANYCS/sasdata/development/kmt")
+# Kenny: setwd("~/RANYCS/sasdata/development/kmt")
 # Hope: 
-# setwd("/Users/Home/mnt/sasdata/development/kmt")
+setwd("/Users/Home/mnt/sasdata/development/kmt")
 
 # load in data
 
@@ -23,9 +22,9 @@ raw.student <- foreach(year=2013:2019, .combine='rbind.fill') %do% {
 raw.nsc <- read_csv('nsc_all.csv')
 
 # read in school-level data
-# Hope: sch.doe <- read.csv("/Users/Home/Documents/MessyData/finalproj/DOE_schooldata.csv")
-# Kenny: 
-sch.doe <- read_csv("/Users/kennymai/Documents/nychomeless/DOE_schooldata.csv")
+# Hope: 
+sch.doe <- read.csv("/Users/Home/Documents/MessyData/finalproj/DOE_schooldata.csv")
+# Kenny: sch.doe <- read_csv("/Users/kennymai/Documents/nychomeless/DOE_schooldata.csv")
 
 # assign student-level data to new name
 doe.full <- raw.student
