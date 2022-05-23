@@ -1,10 +1,3 @@
+The purpose of the project was to build prediction models for homeless student high school graduation rates in NYC public schools. Using longitidunal data, random forest models were used to identify key variables or features to best predict if an individual was at risk of not graduating high school in time. A multi-level LASSO model was used with school level data to cross-validate the features identified by the random forest models.
 
-LIST OF FILES INCLUDED (and brief description):
-- doe.preprocess.R* (complete pre-processing script for data)
-- doe.explore.R (script used to explore and provide descriptive statistics for data, and to generate plots for paper)
-- lasso.R (modeling script for LASSO)
-- modeling.R (modeling script for Random Forest)
-- codebook.pdf (data dictionary and codebook for variables in the data)
-
-
-*Note that to run “doe.preprocess.R”, access is required from the Research Alliance for New York City Schools at NYU Steinhardt.
+Student-level data used for this project was provided by the Research Alliance for NYC Schools (RA). The data were housed on a RA server and the scripts were used in conjunction with SSHFS drive mapping to ensure data never left the server, as per RA's agreement with the NYC Department of Education.
